@@ -241,7 +241,8 @@
     % Information Technology Skills
     \section*{{\faDesktop} INFORMATION TECHNOLOGY SKILLS}%
     \vspace*{0.22cm}%
-    \ITCcompetence{Infrastructure}{
+    \adjustbox{valign=t}{\begin{minipage}{5.9cm}
+    \ITCcompetenceCol{Infrastructure}{
     Docker\\
     Helm \\
     Kubernetes\\
@@ -250,31 +251,30 @@
 
     \vspace*{0.22cm}
 
-    \ITCcompetence{Cloud}{
+    \ITCcompetenceCol{Cloud}{
     AWS\\
     Azure
     }
 
     \vspace*{0.22cm}
 
-    \ITCcompetence{Monitoring}{
+    \ITCcompetenceCol{Monitoring}{
     Grafana\\
     Loki\\
     Prometheus
     }
-
-    \vspace*{0.22cm}
-
-    \ITCcompetence{Automation}{
+    \end{minipage}}
+    \hfill
+    \adjustbox{valign=t}{\begin{minipage}{5.9cm}
+    \ITCcompetenceCol{Automation}{
     Apache Airflow\\
     Github Actions\\
     Gitlab Workflows
-
     }
 
     \vspace*{0.22cm}
 
-    \ITCcompetence{Data}{
+    \ITCcompetenceCol{Data}{
     Pandas\\
     Polars\\
     SQL
@@ -282,11 +282,12 @@
 
     \vspace*{0.22cm}
 
-    \ITCcompetence{Web Development}{
+    \ITCcompetenceCol{Web Development}{
     React.js\\
     HTML\\
     CSS
     }
+    \end{minipage}}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Education
