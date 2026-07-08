@@ -149,10 +149,32 @@
         \hfill {\footnotesize \faMapMarker  ~ #5}
         \newline
         {\small\bfseries #4}
-        \newline 
+        \newline
         \small {\emph{#6}}
-        \newline 
-        \footnotesize {#7} 
+        \newline
+        \footnotesize {#7}
+    \end{minipage}}
+}
+
+% Same as \MySection, but sized for the narrower 11.3cm second-page column
+\newcommand{\MySectionNarrow}[7]{ % input: years, logo, title, university, city, specialization, description
+    \adjustbox{valign=t}{\begin{minipage}{1.6cm}
+        \begin{center}
+            {\small \bfseries #1} \\
+            \vspace*{0.1cm}
+            \includegraphics[width=1.2cm]{#2}
+        \end{center}
+    \end{minipage}}
+    \hfill \vline \hfill
+    \adjustbox{valign=t}{\begin{minipage}{9cm}
+        {\normalsize\bfseries #3}
+        \hfill {\footnotesize \faMapMarker  ~ #5}
+        \newline
+        {\small\bfseries #4}
+        \newline
+        \small {\emph{#6}}
+        \newline
+        \footnotesize {#7}
     \end{minipage}}
 }
 
