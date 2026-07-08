@@ -2,7 +2,7 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk-xelatex",
-      "command": "latexmk",
+      "command": "/Library/TeX/texbin/latexmk",
       "args": [
         "-xelatex",
         "-synctex=1",
@@ -35,5 +35,6 @@
     "*.synctex.gz",
     "*.xdv"
   ],
-  "latex-workshop.view.pdf.viewer": "tab"
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex.linter.enabled": false
 }
