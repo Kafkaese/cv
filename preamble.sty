@@ -136,7 +136,7 @@
 
 % Command for Education and Works
 \newcommand{\MySection}[7]{ % input: years, logo, title, university, city, specialization, description
-    \adjustbox{valign=t}{\begin{minipage}{1.6cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{1.6cm}
         \begin{center}
             {\small \bfseries #1} \\
             \vspace*{0.1cm}
@@ -144,7 +144,7 @@
         \end{center}
     \end{minipage}}
     \hfill \vline \hfill
-    \adjustbox{valign=t}{\begin{minipage}{10.5cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{10.5cm}
         {\normalsize\bfseries #3}
         \hfill {\footnotesize \faMapMarker  ~ #5}
         \newline
@@ -161,7 +161,7 @@
 % \ITCcompetence and the Certificates block, which share the same 2cm label
 % column and 0.15cm gap.
 \newcommand{\MySectionNarrow}[7]{ % input: years, logo, title, university, city, specialization, description
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{2cm}
         \begin{center}
             {\small \bfseries #1} \\
             \vspace*{0.1cm}
@@ -169,7 +169,7 @@
         \end{center}
     \end{minipage}}
     \hspace{0.15cm}\vline\hspace{0.15cm}
-    \adjustbox{valign=t}{\begin{minipage}{8.8cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{8.8cm}
         {\normalsize\bfseries #3}
         \hfill {\footnotesize \faMapMarker  ~ #5}
         \newline
@@ -182,14 +182,14 @@
 }
 
 \newcommand{\MySectionNoPic}[5]{ % input: years, logo, title, university, city, specialization, description
-    \adjustbox{valign=t}{\begin{minipage}{1.6cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{1.6cm}
     \begin{center}
         {\small \bfseries #1} \\
         \vspace*{0.1cm}
     \end{center}
     \end{minipage}}
     \hfill \vline \hfill
-    \adjustbox{valign=t}{\begin{minipage}{10.3cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{10.3cm}
         {\normalsize \bfseries #2}
         \hfill {\footnotesize\faMapMarker  ~ #3}
         \newline
@@ -201,25 +201,23 @@
 
 % Publication Section
 \newcommand{\publication}[6]{ % Article/Conference, year, name, authors, journal, DOI
-    \adjustbox{valign=t}{\begin{minipage}{2.5cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{2.5cm}
     {\small \textbf{#1} \\ \footnotesize #2} \\
     \end{minipage}}
     \hfill
-    \adjustbox{valign=t}{\begin{minipage}{8cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{8cm}
         {\footnotesize \textbf{#3}, #4, \textit{#5}, \aiDoi \hspace{0.1mm} \href{https://www.doi.org/#6}{#6}}
     \end{minipage}}
 }
 
 % ITC section
 \newcommand{\ITCcompetence}[2]{ % input: Branch, description
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
-    \begin{center}
-        {\footnotesize \bfseries #1} \\
-        \vspace*{0.1cm}
-    \end{center}
+    \adjustbox{valign=t}{\begin{minipage}[t]{2cm}
+    \centering
+        {\footnotesize \bfseries #1}
     \end{minipage}}
     \hspace{0.15cm}\vline\hspace{0.15cm}
-    \adjustbox{valign=t}{\begin{minipage}{8.5cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{8.5cm}
         {\footnotesize #2}
     \end{minipage}}
 }
@@ -227,14 +225,12 @@
 % Same as \ITCcompetence, but sized to sit in one column of a \begin{multicols}{2}
 % block instead of spanning the full-width column.
 \newcommand{\ITCcompetenceCol}[2]{ % input: Branch, description
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
-    \begin{center}
-        {\footnotesize \bfseries #1} \\
-        \vspace*{0.1cm}
-    \end{center}
+    \adjustbox{valign=t}{\begin{minipage}[t]{2cm}
+    \centering
+        {\footnotesize \bfseries #1}
     \end{minipage}}
     \hspace{0.15cm}\vline\hspace{0.15cm}
-    \adjustbox{valign=t}{\begin{minipage}{3.2cm}
+    \adjustbox{valign=t}{\begin{minipage}[t]{3.2cm}
         {\footnotesize #2}
     \end{minipage}}
 }
